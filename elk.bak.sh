@@ -22,10 +22,10 @@ eval $(ssh-agent -s)
 ssh-add /etc/ssh/key-new-web-server
 
 #Установить, настроить и отправить в git
-#yum -y install git
-#git config --global user.name "Alexey Boltykhov"
-#git config --global user.email aboltykhov@mail.ru
-#git config --global core.editor vi
+yum -y install git
+git config --global user.name "Alexey Boltykhov"
+git config --global user.email aboltykhov@mail.ru
+git config --global core.editor vi
 git init
 git add .
 git commit -m "Бекап ELK-Сервера"
