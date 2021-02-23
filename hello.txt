@@ -1,0 +1,32 @@
+
+
+
+Hello Al Bo!
+
+#######################################
+# Пример:
+# Чтобы скачать репозиторий dz_elk_server
+#######################################
+pwd
+ll
+mkdir dz_elk_server
+cd dz_elk_server
+git init
+git remote add origin git@github.com:aboltykhov/dz_elk_server.git
+git pull origin main && ll
+
+#######################################
+# Пример:
+# Чтобы отправить dz_elk_server
+#######################################
+pwd
+ls -l
+git add .
+git commit -m "Добавлен файл инструкциий для репозитория dz_elk_server"
+git branch -M main 
+git push -u origin main 
+
+#######################################
+# И т.д.
+#
+#######################################
