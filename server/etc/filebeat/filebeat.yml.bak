@@ -25,8 +25,6 @@ filebeat.inputs:
 
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
-    - /var/log/secure
-    - /var/log/messages
     - /var/log/*.log
     #- c:\programdata\elasticsearch\logs\*
 
@@ -150,7 +148,7 @@ setup.kibana:
   # Scheme and port can be left out and will be set to the default (http and 5601)
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
-  host: "localhost:5601"
+  #host: "localhost:5601"
 
   # Kibana Space ID
   # ID of the Kibana Space into which the dashboards should be loaded. By default,
@@ -178,21 +176,19 @@ setup.kibana:
 output.elasticsearch:
   # Array of hosts to connect to.
   hosts: ["localhost:9200"]
-  #hosts: ["или укажи внешний сервер для отправки логов"]
 
   # Protocol - either `http` (default) or `https`.
   #protocol: "https"
 
   # Authentication credentials - either API key or username/password.
   #api_key: "id:api_key"
-  username: "elastic"
-  password: "changeme"
+  #username: "elastic"
+  #password: "changeme"
 
 # ------------------------------ Logstash Output -------------------------------
 #output.logstash:
   # The Logstash hosts
   #hosts: ["localhost:5044"]
-  #hosts: ["или укажи внешний сервер для отправки логов"]
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
